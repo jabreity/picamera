@@ -1,6 +1,5 @@
 from picamera2 import Picamera2
 from datetime import datetime
-import time
 picam2 = Picamera2()
 camera_config = picam2.create_still_configuration(main={"size": (1920, 1080)})
 picam2.configure(camera_config)
