@@ -9,7 +9,6 @@ for i in range(1, 60):
 	second = None
 	while True:
 		if datetime.now().second != second:
-			print(f'Do something {datetime.now()}')
 			timestamp = str(datetime.now())
 			timestamp = timestamp.replace(":", "-")
 			timestamp = timestamp.replace(" ", "_")
