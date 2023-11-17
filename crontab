@@ -1,0 +1,4 @@
+# Every minute run picam.sh - could be less if desired
+* * * * * /home/$USER/picam.sh
+# Every day run picanclean.sh - matches our daily cleanup interval
+* * * 1 * /home/$USER/picamclean.sh
