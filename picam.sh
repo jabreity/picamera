@@ -1,10 +1,10 @@
 #! /bin/bash
-
+# to stop, use kill -9 $(./picam.sh)
 if
   (pgrep -f picamera2still.py)
 then
-  echo picamera2still.py is running
+  :
 else
   echo start pycamera2still.py
-  (nohup python /home/$USER/picamera2still.py &)
+  (python /home/$USER/picamera2still.py &>/dev/null & disown))
 fi
